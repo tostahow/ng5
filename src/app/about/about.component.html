@@ -1,3 +1,10 @@
-<p>
+<p (click)="sendMeHome()">
   about works!
 </p>
+
+<ul>
+  <li *ngFor="let goal of goals">
+    {{goal}}
+  </li>
+</ul>
+<router-outlet></router-outlet>
